@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="fctn.js" defer></script>
+
+</head>
+
+<body>
+<header> 
+        <button class="btn" onclick="location.href = 'index.html'">Accueil</button>
+        <button class="btn" onclick="location.href = 'projets.html'">Projets</button>
+        <a href="#parcours"><button class="btn">Parcours</button></a>
+        <a href="#contacts"><button class="btn">Contacts CV</button></a>
+</header>
+
+    <!-- <div id="header"></div> -->
+    
+ <div class = showoff>
+    <div class="intro">
+        <h1>Bienvenue sur mon portfolio !!</h1>
+        <p>Je suis <strong>Jenna-Louisa Djaouel</strong>, étudiante en 2ème année d'un <br> BUT Informatique Graphique.</p>
+    </div>
+
+
+<div class="presentation">
+
+    <div class="card">
+        <h2>Qui suis-je ?</h2>
+        <p>Je suis une étudiante de 20ans aspirant à travailler dans le développement de jeux vidéo.</p>
+        <p>Créer des expériences interactives et immersives est toujours satisfaisant à mes yeux. J'ai l'impression de donner vie à des bouts de codes et d'images.</p>
+    </div>
+
+    <div class="card">
+        <h2>Pourquoi ce domaine ?</h2>
+        <p>Depuis petite, j’ai toujours voulu comprendre ce qui se cache derrière l’écran lors de nos interactions numériques.</p>
+        <p> Pokémon Heart Gold sur ma Nintendo DS Lite a été mon premier déclic.</p>
+    </div>
+</div>
+
+ 
+
+        <div class = "competences">
+
+            <div class = "Langages">
+                <h3>Langages de programmation</h3>
+                <button class="btn" onclick="toggleDetails(this)">Dérouler la liste</button>
+                <div id="details" style="display: none;">
+                    <img id="logo" src="./img/HTML5_logo.png" alt="logo de HTML"> 
+                    <img id="logo" src="./img/js-logo.png" alt="logo de javascript" > 
+                    <img id="logo" src="./img/CSS3_logo.png" alt="logo de CSS">
+                    <img id="logo" src="./img/cs-logo.png" alt="logo de C#">
+                    <img id="logo" src="./img/cpp-logo.png" alt="logo de C++">
+                    <img id="angular" src="./img/angular.png" alt="logo de Angular"   > <img id="logo" src="./img/Typescript_logopng.png" alt="logo de typescript">     
+                </div>
+            </div>
+
+            <div class = "Logiciels">
+                <h3>Logiciels</h3>
+                <button class="btn" onclick="toggleDetails(this)">Dérouler la liste</button>
+                <div id="details" style="display: none;">                    
+                    <img  src="./img/unity.png" alt="logo de HTML">
+                    <img src="./img/blender.png" alt="logo de blender">
+                    <img  src="./img/visualstudiopng.png" alt="logo devisual studio">
+                    <img  src="./img/vscode.png" alt="logo de visual studio code">
+                </div> 
+            </div>
+
+
+            <div class = "softskills">
+                <h3>Soft Skills</h3>
+                <button class="btn"onclick="toggleDetails(this)">Dérouler la liste</button>
+                <div id="details" style="display: none;">
+                    
+                        <ul id="liste">
+                            <li> Teamwork et esprit d'équipe </li>
+                            <li> Communication </li>
+                            <li> Adaptabilité et flexibilité </li>
+                            <li> Gestion du temps et des priorités </li>
+                            <li> Esprit d'analyse et de synthèse </li>
+                        </ul>   
+                    
+                </div>
+            </div>
+
+            <div class = "comptech">
+                <h3> Compétences techniques </h3>
+                <button class="btn" onclick="toggleDetails(this)">Dérouler la liste</button>
+                <div id="details" style="display: none;">
+                    
+                        <ul id="liste">    
+                            <li> Conception d'interfaces interactives et intuitives</li>
+                            <li> Conception de zones d'interactions</li>
+                            <li> Gestion de bases de données</li>
+                            <li> Conception de jeux vidéo </li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bas">
+        <div class="parcours" id="parcours">
+            <h2> Mon parcours</h2>
+                
+                <p><strong>2020/2023</strong> <br><br> Lycée Nelson Mandela <br> 14 Rue Louis Reybaud, <br> 13012 Marseille, France</p>
+                <!-- <img src="./img/lycee.jpg" alt="lycee nelson mandela marseille"> -->
+                <p><strong>2023/2026</strong> <br> <br>IUT Clermont Auvergne <br> Site du Puy-en-Velay <br> 8 Rue Jean Baptiste Fabre <br>43000 le Puy-en-Velay, France </p>
+                <!-- <img src="./img/iut.jpg" alt="iut site du puy en velay"> -->     
+                <p><strong>2025</strong> <br><br>Stage de 2ème année de BUT Informatique Graphique <br> Conseil départemental des Bouches-du-Rhônes <br> Espace Nobel , 11 rue Frédérique Joliot Curie <br> 13000 Marseille, France</p>                 
+        </div>
+
+
+        <div class="contacts" id="contacts">
+
+            <h2> Contacts et CV</h2>
+            <p>
+                <a href="https://linkedin.com/in/jenna-djaouel"  target="_blank"><button class="btn">LinkedIN</button></a> 
+                <a href="https://github.com/cpp-archer"  target="_blank"><button class="btn">GitHub</button></a>
+                <a href="jennalouisa.djaouel@outlook.com"  target="_blank" ><button class="btn">Email</button></a> 
+                <a href="./img/CV_DJAOUEL_JennaLouisa.pdf"  download > <img class="cv" src="./img/CV_DJAOUEL_JennaLouisa-1.png" alt="CV" width="400px" height="550px"></a> 
+            </p>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
