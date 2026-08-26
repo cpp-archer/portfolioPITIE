@@ -12,7 +12,7 @@ app.listen(PORT, () => {
 
 
 app.get('/', (req, res) => {    
-    res.sendFile(path.join(__dirname, 'home.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
