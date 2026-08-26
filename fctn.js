@@ -7,6 +7,13 @@ function toggleDetails(button) {
   }
 }
 
+function filterProjects(year) {
+  const projects = document.querySelectorAll('.project-card');
+  projects.forEach((project) => {
+    project.style.display = year === 'all' || project.dataset.year === year ? '' : 'none';
+  });
+}
+
 
 // document.getElementById("header").innerHTML =
 

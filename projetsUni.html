@@ -23,6 +23,13 @@
     <nav class="nav-links">
         <a href="#jeux"> Jeux Vidéo</a>
         <a href="#appweb"> Applications et web</a>
+        <label class="year-filter" for="year-filter">Année :
+            <select id="year-filter" onchange="filterProjects(this.value)">
+                <option value="all">Toutes</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+            </select>
+        </label>
     </nav>
 
 
@@ -30,7 +37,7 @@
         <h2> Projets de Jeux Vidéo</h2>
         <div class="projets-container">
 
-            <div class="card">
+            <div class="card project-card" data-year="2025">
                 <h3>Handycapy</h3>
                 <p>Jeu vidéo sur le thème du handicap, réalisé avec Unity et C#.</p>
                 <button class="btn" onclick="toggleDetails(this)">Détails</button>
@@ -43,7 +50,7 @@
             </div>
 
             
-            <div class="card">
+            <div class="card project-card" data-year="2025">
                 <h3>MLK</h3>
                 <p>Musée virtuel en hommage à Martin Luther King, réalisé avec Unreal Engine en Blueprints.</p>
                 <button class="btn" onclick="toggleDetails(this)">Détails</button>
@@ -53,9 +60,10 @@
                     <p><strong>Technos :</strong> Unreal Engine, Blueprints</p>
                 </div>
                 <button class="btn" onclick="location.href='mlk.html'">Voir le projet</button>
+                <a href="https://github.com/cpp-archer" target="_blank"><button class="btn">Voir GitHub</button></a>
             </div>
 
-            <div class="card">
+            <div class="card project-card" data-year="2025">
                 <h3>Statue Builder</h3>
                 <p>Jeu en réalité virtuelle de construction de statue, développé sous Unity en 2ᵉ année.</p>
                 <button class="btn" onclick="toggleDetails(this)">Détails</button>
@@ -65,10 +73,11 @@
                     <p><strong>Technos :</strong> Unity, C#</p>
                 </div>
                 <button class="btn" onclick="location.href='statueBuilder.html'">Voir le projet</button>
+                <a href="https://github.com/cpp-archer" target="_blank"><button class="btn">Voir GitHub</button></a>
             </div>
 
        
-            <div class="card">
+            <div class="card project-card" data-year="2025">
                 <h3>Road Esquive</h3>
                 <p>Petit jeu d’esquive de véhicules, développé avec Unity en C#.</p>
                 <button class="btn" onclick="toggleDetails(this)">Détails</button>
@@ -78,12 +87,19 @@
                     <p><strong>Technos :</strong> Unity, C#</p>
                 </div>
                 <button class="btn" onclick="location.href='route.html'">Voir le projet</button>
+                <a href="https://github.com/cpp-archer" target="_blank"><button class="btn">Voir GitHub</button></a>
             </div>
 
-            <div class="card">
+            <div class="card project-card" data-year="2026">
                 <h3>Find and Flash</h3>
                 <p>Jeu d’exploration et de photographie dans une ville médiévale animée.</p>
                 <button class="btn" onclick="location.href='findAndFlash.html'">Voir le projet</button>
+            </div>
+
+            <div class="card project-card" data-year="2026">
+                <h3>Stealth Mage</h3>
+                <p>Jeu d’infiltration et d’exploration développé avec Unity et C#.</p>
+                <button class="btn" onclick="location.href='stealthMage.html'">Voir le projet</button>
             </div>
 
         </div>
@@ -94,7 +110,7 @@
         <div class="projets-container">
 
        
-            <div class="card">
+            <div class="card project-card" data-year="2025">
                 <h3>Climat APP</h3>
                 <p>Interface interactive illustrant les effets du changement climatique.</p>
                 <button class="btn" onclick="toggleDetails(this)">Détails</button>
@@ -107,7 +123,7 @@
             </div>
 
         
-            <div class="card">
+            <div class="card project-card" data-year="2025">
                 <h3>Maillage Procédural Construct</h3>
                 <p>Prototype d’environnement de construction à base de maillage procédural en 3D.</p>
                 <button class="btn" onclick="toggleDetails(this)">Détails</button>
@@ -117,10 +133,11 @@
                     <p><strong>Technos :</strong> Unity, C#</p>
                 </div>
                 <button class="btn" onclick="location.href='mesh.html'">Voir le projet</button>
+                <a href="https://github.com/cpp-archer" target="_blank"><button class="btn">Voir GitHub</button></a>
             </div>
 
 
-            <div class="card">
+            <div class="card project-card" data-year="2025">
                 <h3>Vapeur</h3>
                 <p>Application web de gestion de bibliothèque de jeux vidéo (type Steam).</p>
                 <button class="btn" onclick="toggleDetails(this)">Détails</button>
@@ -130,6 +147,7 @@
                     <p><strong>Technos :</strong> Node.js, Express, Prisma, Handlebars</p>
                 </div>
                 <button class="btn" onclick="location.href='vapeur.html'">Voir le projet</button>
+                <a href="https://github.com/cpp-archer" target="_blank"><button class="btn">Voir GitHub</button></a>
             </div>
 
         </div>
